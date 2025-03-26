@@ -1,5 +1,5 @@
 {
-    "name": "martingoldie/statamic-video",
+    "name": "upscope/statamic-video",
     "autoload": {
         "psr-4": {
             "Upscope\\Vimeo\\": "src"
