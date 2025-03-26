@@ -1,0 +1,29 @@
+{
+    "name": "upscope/vimeo",
+    "autoload": {
+        "psr-4": {
+            "Upscope\\Vimeo\\": "src"
+        }
+    },
+    "require": {
+        "statamic/cms": "^5.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "pixelfear/composer-dist-plugin": true
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "Vimeo",
+            "description": "Vimeo addon"
+        },
+        "laravel": {
+            "providers": [
+                "Upscope\\Vimeo\\ServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
