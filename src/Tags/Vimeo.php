@@ -12,7 +12,11 @@ class Vimeo extends Tags
     {
         $url = $this->params->get('url');
 
-        $id = Uri::of($url)->path();
+		if ($url) {
+			 $id = Uri::of($url)->path();
+		} else {
+			return;
+		}
 
         $video = VimeoService::getVideo($id);
 
