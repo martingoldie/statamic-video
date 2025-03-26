@@ -1,5 +1,5 @@
 {
-    "name": "upscope/vimeo",
+    "name": "martingoldie/vimeo",
     "autoload": {
         "psr-4": {
             "Upscope\\Vimeo\\": "src"
