@@ -13,7 +13,7 @@ class Vimeo
         return Cache::remember('vimeo-video-'.$id, 60 * 60 * 24, function () use ($id) {
             $response = self::makeRequest()
                 ->get('https://api.vimeo.com/videos/'.$id, [
-                    'fields' => 'play',
+                    'fields' => ['play', 'files'],
                 ]);
 
             return $response->json();
