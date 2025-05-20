@@ -30,7 +30,7 @@ class Vimeo extends Tags
 
         $hls = $hls ?? null;
         $files = $files ? array_reverse($files) : [];
-        $key_values = array_column($files, 'rendition');
+        $key_values = array_column($files, 'width');
         array_multisort( $key_values, SORT_DESC, $files);
 
 //        Play Progressive links have expiry dates so they work well on a dynamic website but not on a static site.
